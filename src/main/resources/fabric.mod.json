@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "noteblockplayer",
+  "version": "${version}",
+  "name": "Noteblockplayer",
+  "description": "Play a noteblock songs!",
+  "authors": [
+    "INotSleep"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "./icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.inotsleep.noteblockplayer.NoteblockPlayer"
+    ]
+  },
+  "mixins": [
+    "noteblockplayer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
